@@ -1,0 +1,3 @@
+[submodule "ansible-dev-vm"]
+	path = ansible-dev-vm
+	url = git://github.com/nucivic/ansible-dev-vm.git

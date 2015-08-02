@@ -27,6 +27,13 @@
                     "execute_command": "echo 'vagrant'|sudo -S bash '{{.Path}}'"
                 }
             }
+        },
+        {
+          "type": "ansible-local",
+          "playbook_dir": "./ansible-dev-vm",
+          "playbook_file": "playbook.yml",
+          "playbook_paths": ["./ansible-dev-vm/roles"],
+          "role_paths": ["/usr/local/etc/ansible/roles", "./ansible-dev-vm/roles"]
         }
     ],
     "builders": [
