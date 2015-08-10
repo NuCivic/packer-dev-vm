@@ -6,4 +6,4 @@ Virtual boxes (or Fusion VM Desktops) from the NuCivic [ansible-dev-vm Playbook]
 
 This configuration is used to provision the boxes at
 https://atlas.hashicorp.com/dkinzer/boxes/ansible-dev-vm
-[1]:(https://github.com/nucivic/ansible-dev-vm)
+[1]: https://github.com/nucivic/ansible-dev-vm
