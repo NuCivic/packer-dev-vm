@@ -1,7 +1,8 @@
 {
     "push": {
       "name": "",
-      "vcs": true
+      "vcs": false,
+      "exclude": [".git/*", "*.swp"]
     },
     "variables": {
         "atlas_username": "{{env `ATLAS_USERNAME`}}",
@@ -12,6 +13,7 @@
             "type": "shell",
             "scripts": [
                 "scripts/base.sh",
+                "scripts/ansible.sh",
                 "scripts/virtualbox.sh",
                 "scripts/vmware.sh",
                 "scripts/vagrant.sh",
@@ -31,9 +33,7 @@
         {
           "type": "ansible-local",
           "playbook_dir": "./ansible-dev-vm",
-          "playbook_file": "playbook.yml",
-          "playbook_paths": ["./ansible-dev-vm/roles"],
-          "role_paths": ["/usr/local/etc/ansible/roles", "./ansible-dev-vm/roles"]
+          "playbook_file": "./ansible-dev-vm/playbook.yml"
         }
     ],
     "builders": [
@@ -104,7 +104,7 @@
             "artifact_type": "vagrant.box",
             "metadata": {
                 "provider": "vmware_desktop",
-                "version": "0.0.1"
+                "version": "0.0.3"
             }
         },
         {
@@ -114,7 +114,7 @@
             "artifact_type": "vagrant.box",
             "metadata": {
                 "provider": "virtualbox",
-                "version": "0.0.1"
+                "version": "0.0.3"
             }
         }]
     ]
