@@ -9,6 +9,12 @@ https://atlas.hashicorp.com/dkinzer/boxes/ansible-dev-vm
 
 ## Building Instructions:
 
+### Requirements
+```
+brew cask update
+brew cask install packer
+```
+
 ### Intallation
 ```
 git clone --recursive  nucivic/packer-dev-vm
