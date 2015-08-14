@@ -29,6 +29,6 @@ cp config.yml.sample config.yml
 # Make your changes to the template.json before running then push changes.
 # Example:
 
-packer push -name=dkinzer/ansible-dev-vm template.json
+ATLAS_TOKEN=<your-token> packer push -name=dkinzer/ansible-dev-vm template.json
 ```
 [1]: https://github.com/nucivic/ansible-dev-vm
