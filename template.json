@@ -24,7 +24,8 @@
         {
           "type": "ansible-local",
           "playbook_dir": "./ansible-dev-vm",
-          "playbook_file": "./ansible-dev-vm/playbook.yml"
+          "playbook_file": "./ansible-dev-vm/playbook.yml",
+          "roles_path": "./ansible-dev-vm/roles"
         },
         {
             "type": "shell",
