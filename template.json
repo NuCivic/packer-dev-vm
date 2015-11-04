@@ -49,7 +49,7 @@
             ],
             "headless": true,
             "boot_wait": "10s",
-            "disk_size": 20480,
+            "disk_size": 42000,
             "guest_os_type": "Ubuntu_64",
             "http_directory": "http",
             "iso_checksum": "a3b345908a826e262f4ea1afeb357fd09ec0558cf34e6c9112cead4bb55ccdfb",
@@ -75,7 +75,7 @@
                 "initrd=/install/initrd.gz -- <enter>"
             ],
             "boot_wait": "10s",
-            "disk_size": 20480,
+            "disk_size": 42000,
             "guest_os_type": "Ubuntu-64",
             "headless": true,
             "http_directory": "http",
